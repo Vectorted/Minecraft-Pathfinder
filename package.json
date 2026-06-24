@@ -62,16 +62,16 @@
   ],
   "author": {
     "name": "Vectorted",
-    "email": "",
-    "url": "https://github.com/Vectorted"
+    "email": "3537099724@qq.com",
+    "url": "https://github.com/Vectorted/Minecraft-Pathfinder"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Vectorted/Minecraft-Pathfinder.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Vectorted/Minecraft-Pathfinder/issues"
   },
   "homepage": "",
   "dependencies": {

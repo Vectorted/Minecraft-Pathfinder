@@ -18,7 +18,7 @@ import { type NavigationConfig } from './module/config/NavigationConfig.js';
  * @type {mineflayer.Bot}
  */
 const bot: mineflayer.Bot = mineflayer.createBot({
-    host: '192.168.100.128',
+    host: 'localhost',
     port: 25565,
     username: 'Bot'
 });

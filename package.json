@@ -1,0 +1,100 @@
+{
+  "name": "minecraft-pathfinder",
+  "version": "1.26.6.24.v4",
+  "description": "Advanced pathfinding bot built with Mineflayer.",
+  "type": "module",
+  "main": "dist/module.js",
+  "module": "dist/module.js",
+  "types": "dist/module.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.js",
+      "default": "./dist/module.js"
+    },
+    "./system": {
+      "types": "./dist/system/System.d.ts",
+      "import": "./dist/system/System.js",
+      "default": "./dist/system/System.js"
+    },
+    "./goals": {
+      "types": "./dist/goals/Goal.d.ts",
+      "import": "./dist/goals/Goal.js",
+      "default": "./dist/goals/Goal.js"
+    },
+    "./config": {
+      "types": "./dist/config/NavigationConfig.d.ts",
+      "import": "./dist/config/NavigationConfig.js",
+      "default": "./dist/config/NavigationConfig.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "node src/main.ts",
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "minecraft",
+    "mineflayer",
+    "pathfinding",
+    "navigation",
+    "bot",
+    "a-star",
+    "automation",
+    "mlg",
+    "water-bucket",
+    "auto-eat",
+    "kill-aura"
+  ],
+  "author": {
+    "name": "Vectorted",
+    "email": "",
+    "url": "https://github.com/Vectorted"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "mineflayer": "^4.0.0",
+    "vec3": "^0.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "peerDependencies": {
+    "mineflayer": "^4.37.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
